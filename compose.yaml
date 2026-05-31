@@ -1,0 +1,9 @@
+﻿services:
+  youssef_car_site:
+    image: nginx:alpine
+    container_name: youssef_car_site
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - .:/usr/share/nginx/html
